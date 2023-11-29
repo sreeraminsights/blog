@@ -1,0 +1,5 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Sreeram's blog"
+theme = "papercss-hugo-theme"
+ 
