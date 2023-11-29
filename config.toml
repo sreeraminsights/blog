@@ -46,7 +46,7 @@ theme = "papercss-hugo-theme"
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Sreeram's blog"
     subtitle = "A simple, retro theme for Hugo"
     owner = ""
     keywords = ""
