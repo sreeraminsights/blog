@@ -5,6 +5,7 @@ title: PaperCSS
 theme: papercss-hugo-theme
 googleAnalytics: UA-123456789-1
 disqusShortname: yourdiscussshortname
+aliases=["blog"]
 
 privacy:
   disqus:
