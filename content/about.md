@@ -1,1 +1,1 @@
-I'm sreeram.
+Hey there, I'm Sreeram, a tech enthusiast fueled by an insatiable curiosity for learning. My passion lies in exploring the ever-evolving world of technology, always eager to dive into new concepts and innovations.
