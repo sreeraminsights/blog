@@ -2,71 +2,52 @@ baseURL = 'https://sreeraminsights.github.io/blog/'
 languageCode = 'en-us'
 title = "Sreeram's blog"
 theme = "papercss-hugo-theme"
- 
-[params]
-  # dir name of your main content (default is `content/posts`).
-  # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+[permalinks]
+    post = "/blog/:slug"
 
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "orange"
+[menu]
 
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 10
 
-  # show selector to switch language
-  showLanguageSelector = false
+  [[menu.main]]
+    name = "Videos"
+    url = "/videos"
+    weight = 20
 
-  # set theme to full screen width
-  fullWidthTheme = false
+  [[menu.main]]
+    name = "Uses"
+    url = "/uses"
+    weight = 30
 
-  # center theme with default width
-  centerTheme = false
+  [[menu.main]]
+    name = "Links"
+    url = "/links"
+    weight = 40
 
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+  [[menu.main]]
+    name = "Contact"
+    url = "sreeraminsights@gmail.com"
+    weight = 50
 
-  # set post to show the last updated
-  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = false
-  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
 
-  # set all headings to their default size (depending on browser settings)
-  # it's set to `true` by default
-  # oneHeadingSize = false
+  [[menu.social]]
+    name = "GitHub"
+    pre = "github"
+    url = "https://github.com/sreeraminsights"
+    weight = 10
 
-[params.twitter]
-  # set Twitter handles for Twitter cards
-  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-  # do not include @
-  creator = ""
-  site = ""
+  [[menu.social]]
+    name = "YouTube"
+    pre = "youtube"
+    url = "https://youtube.com/@sreeraminsights"
+    weight = 20
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "Sreeram's blog"
-    subtitle = "A simple, retro theme for Hugo"
-    owner = ""
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
 
-    [languages.en.params.logo]
-      logoText = "Terminal"
-      logoHomeLink = "/"
-
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+[markup]
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
+  [markup.highlight]
+    style = 'catppuccin-macchiato'
